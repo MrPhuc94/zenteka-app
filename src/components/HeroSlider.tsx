@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
 
 const slides = [
@@ -15,7 +16,7 @@ export default function HeroSlider() {
 
   return (
     <div className="relative w-full overflow-hidden bg-gray-700">
-      <img
+      <Image
         src={slides[current].img}
         alt={slides[current].alt}
         className="w-full h-full object-cover transition-all duration-500"

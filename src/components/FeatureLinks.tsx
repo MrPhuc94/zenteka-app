@@ -18,7 +18,7 @@ export default function FeatureLinks() {
         <div className="flex flex-row gap-2 md:gap-6 justify-center md:justify-between items-center flex-nowrap">
           {features.map((f, i:number) => (
             <div
-              key={f.label}
+              key={`${f.label}-${i}`}
               className="flex flex-col items-center justify-center flex-1 min-w-0 gap-1 py-2"
             >
               <span className="mb-2 flex items-center justify-center w-8 h-8 md:w-12 md:h-12">

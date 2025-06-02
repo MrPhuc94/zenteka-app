@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 export default function NftDropsHotPromo() {
   return (
     <section className="w-full md:px-[10%] mt-12 px-4">
@@ -20,7 +22,7 @@ export default function NftDropsHotPromo() {
             </div>
           </div>
           <div className="w-full h-[180px] md:h-[240px] rounded-xl overflow-hidden bg-gray-800">
-            <img src="/assets/section2_image1.png" alt="NFT Drops" className="w-full h-full object-cover" />
+            <Image src="/assets/section2_image1.png" alt="NFT Drops" width={120} height={160} className="w-full h-full object-cover" />
           </div>
         </div>
         {/* Right: HOT NFT & PROMOTION */}
@@ -28,13 +30,13 @@ export default function NftDropsHotPromo() {
           <div className="flex flex-col justify-between">
             <h3 className="text-xl md:text-2xl font-extrabold uppercase text-white tracking-wide mb-4">HOT NFT</h3>
             <div className="w-full rounded-xl overflow-hidden bg-gray-800">
-              <img src="/assets/section2_image2.png" alt="Hot NFT" className="w-full h-full object-cover min-h-[200px] md:min-h-[240px]"/>
+              <Image src="/assets/section2_image2.png" alt="Hot NFT" width={120} height={160} className="w-full h-full object-cover min-h-[200px] md:min-h-[240px]"/>
             </div>
           </div>
           <div className="flex flex-col justify-between">
             <h3 className="text-xl md:text-2xl font-extrabold uppercase text-white tracking-wide mb-4">PROMOTION</h3>
             <div className="w-full rounded-xl overflow-hidden bg-gray-800">
-              <img src="/assets/section2_image3.png" alt="Promotion" className="w-full h-full object-cover min-h-[200px] md:min-h-[240px]"/>
+              <Image src="/assets/section2_image3.png" alt="Promotion" width={120} height={160} className="w-full h-full object-cover min-h-[200px] md:min-h-[240px]"/>
             </div>
           </div>
         </div>

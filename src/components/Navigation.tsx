@@ -7,7 +7,7 @@ interface NavigationProps {
   onClose?: () => void;
 }
 
-export default function Navigation({ open, onClose }: NavigationProps) {
+export default function Navigation({ open }: NavigationProps) {
   return (
     <nav
       className={`

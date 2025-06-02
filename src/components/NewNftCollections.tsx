@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 const cards = [
   { id: 1, img: "/assets/section1_image2.png" },
   { id: 2, img: "/assets/section1_image3.png" },
@@ -28,7 +30,7 @@ export default function NewNftCollections() {
       <div className="flex gap-4 overflow-x-auto pb-2 px-2 md:grid md:grid-cols-7 md:gap-4 md:overflow-visible">
         {cards.map(card => (
           <div key={card.id} className="min-w-[120px] h-[160px] md:min-w-0 md:w-full md:h-[180px] rounded-xl overflow-hidden bg-gray-800 flex-shrink-0">
-            <img src={card.img} alt={`NFT Collection ${card.id}`} className="w-full h-full object-cover" />
+            <Image src={card.img} alt={`NFT Collection ${card.id}`} width={120} height={160} className="w-full h-full object-cover" />
           </div>
         ))}
       </div>
