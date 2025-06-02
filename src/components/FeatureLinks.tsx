@@ -16,7 +16,7 @@ export default function FeatureLinks() {
     <section className="w-full flex items-center max-h-[120px]">
       <div className="w-full md:max-w-full bg-[#1F2023] py-2 md:px-[10%] px-0">
         <div className="flex flex-row gap-2 md:gap-6 justify-center md:justify-between items-center flex-nowrap">
-          {features.map((f, i) => (
+          {features.map((f, i:number) => (
             <div
               key={f.label}
               className="flex flex-col items-center justify-center flex-1 min-w-0 gap-1 py-2"

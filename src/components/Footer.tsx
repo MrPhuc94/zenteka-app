@@ -68,6 +68,9 @@ export default function Footer() {
             {contactLinks.map(link => (
               <li key={link}><a href={`mailto:${link}`} className="hover:text-primary">{link}</a></li>
             ))}
+            <button className="text-primary mt-4 cursor-pointer">
+              <Image src="/assets/download_app.png" alt="Download App" width={151.5} height={44} />
+            </button>
           </ul>
         </div>
       </div>
