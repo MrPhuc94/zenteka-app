@@ -1,2 +1,9 @@
 @import "tailwindcss";
 
+.font-barlow {
+  font-family: var(--font-barlow-semicondensed), Barlow Semi Condensed, Barlow, Arial, sans-serif;
+}
+
+.font-barlow-condensed {
+  font-family: var(--font-barlow-semicondensed), Barlow Semi Condensed, Barlow, Arial, sans-serif;
+}

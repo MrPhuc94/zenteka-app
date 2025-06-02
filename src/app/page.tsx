@@ -3,13 +3,15 @@
 import Header from "@/components/Header";
 import { useState, useEffect } from "react";
 import dynamic from "next/dynamic";
-import HeroSlider from "@/components/HeroSlider";
-import FeatureLinks from "@/components/FeatureLinks";
-import NewNftCollections from "@/components/NewNftCollections";
-import NftDropsHotPromo from "@/components/NftDropsHotPromo";
-import Footer from "@/components/Footer";
 
 const Navigation = dynamic(() => import("@/components/Navigation"), { ssr: false });
+
+// Lazy load components
+const HeroSlider = dynamic(() => import("@/components/HeroSlider"), { ssr: false });
+const FeatureLinks = dynamic(() => import("@/components/FeatureLinks"), { ssr: false });
+const NewNftCollections = dynamic(() => import("@/components/NewNftCollections"), { ssr: false });
+const NftDropsHotPromo = dynamic(() => import("@/components/NftDropsHotPromo"), { ssr: false });
+const Footer = dynamic(() => import("@/components/Footer"), { ssr: false });
 
 export default function Home() {
   const [navOpen, setNavOpen] = useState(false);

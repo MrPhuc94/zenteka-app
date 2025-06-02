@@ -52,8 +52,8 @@ export default function Header({ onMenuClick, navOpen }: HeaderProps) {
         </nav>
         {/* Auth Buttons */}
         <div className="flex gap-2 ml-4">
-          <Button variant="primary" state="normal" className="italic px-6 py-2 rounded-full bg-primary text-black font-extrabold uppercase text-[16px] leading-[24px] shadow-md tracking-wider">Sign Up</Button>
-          <Button variant="secondary" state="normal" className="italic px-6 py-2 rounded-full border border-primary text-primary font-extrabold uppercase text-[16px] leading-[24px] tracking-wider">Log In</Button>
+          <Button variant="primary" state="normal" className="italic px-6 py-2 rounded-full bg-[#FFC700] font-bold text-black font-extrabold uppercase text-[16px] leading-[24px] shadow-md tracking-wider">Sign Up</Button>
+          <Button variant="secondary" state="normal" className="italic px-6 py-2 rounded-full border border-[#FFC700] text-white font-extrabold uppercase text-[16px] leading-[24px] tracking-wider">Log In</Button>
         </div>
     </div>
     </header>
