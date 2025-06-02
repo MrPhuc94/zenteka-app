@@ -1,3 +1,8 @@
+# Zentek App
+
+![App Screenshot](./public/assets/appresult1.png)
+![App Screenshot](./public/assets/appresult2.png)
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
